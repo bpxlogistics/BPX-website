@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BPX Logistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f1115;
+      color: #f4f4f4;
+    }
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: #111417;
+    }
+    .logo-text {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #1f3b2b; /* dark green */
+    }
+    .logo-sub {
+      font-size: 18px;
+      color: #cccccc;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      border-left: 4px solid #1f3b2b;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+    .card {
+      background: #15181d;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    .services-list li {
+      margin-bottom: 8px;
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 20px 10px 30px;
+      color: #888;
+    }
+    a {
+      color: #57ff8f;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .logo-text {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-text">BPX LOGISTICS</div>
+    <div class="logo-sub">Reliable furniture & freight delivery you can count on.</div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="card">
+        <p>
+          BPX Logistics is a locally owned delivery service focused on safe,
+          on-time transport of furniture, freight, and oversized items.
+          From store-to-door drops to multi-stop routes, we treat every load
+          like it’s our own.
+        </p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="card">
+        <ul class="services-list">
+          <li>Furniture store deliveries (couches, bedroom sets, dining tables)</li>
+          <li>Residential moves for single items or small apartments</li>
+          <li>Last-mile delivery for local businesses</li>
+          <li>White-glove inside placement upon request</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="areas">
+      <h2>Service Area</h2>
+      <div class="card">
+        <p>
+          Based in <strong>[Your City / Region]</strong>. 
+          We currently serve <strong>[list main cities / counties]</strong>.
+          Need something outside this area? Reach out and we’ll see what we can do.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card contact">
+        <span><strong>Phone:</strong> [your number]</span>
+        <span><strong>Email:</strong> [your email]</span>
+        <span><strong>Business Hours:</strong> [ex: Mon–Sat, 8am–6pm]</span>
+        <p>
+          Text, call, or email for a free quote. 
+          Share pickup/drop-off addresses, item descriptions, and preferred dates.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> BPX Logistics · All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
